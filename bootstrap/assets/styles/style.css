@@ -1,0 +1,183 @@
+/*1.header
+2. main
+3. Верхняя карточка
+4. Нижние карточки
+5.footer*/
+body {
+    font-size: 100%;
+}
+
+.package {
+    max-width: 1300px;
+    width: 100%;
+}
+
+/*1. header*/
+.container-upper {
+    background-color: rgb(71, 69, 69);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+.logo {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.burger-menu {
+    width: 50px;
+    display: none;
+}
+
+.nav-position {
+    margin: 0 100px;
+}
+
+.nav-link-first {
+    color: #fff;
+}
+
+.card {
+    margin-top: 30px;
+}
+
+/* 2.main
+ 3. Верхняя карточка*/
+
+.card-title-first {
+    font-weight: 400;
+    font-size: 3rem;
+
+}
+
+.card-text-upperbox {
+    font-size: 1rem;
+}
+
+/* 4. Нижние карточки*/
+.cards-wrapper-down {
+    margin: 0 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.card-title-down {
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*5.footer*/
+
+.footer-container {
+    background-color: rgb(71, 69, 69);
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 20px 0;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .card-title-first {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    .card-text-upperbox {
+        font-size: 0.8rem;
+    }
+
+    .card-four {
+        display: none;
+    }
+
+    .card-text {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .footer-container-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 772px) {
+
+    .card-title-first {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .cards-wrapper-down {
+        margin: 0 0 0 30%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .cards-wrapper-down {
+        margin-bottom: 15px;
+        gap: 5px;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .cards-wrapper-down {
+        margin: 0 200px 0 100px;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .cards-wrapper-down {
+        margin: 0 80px 0 100px;
+    }
+
+    .container-upper {
+        padding: 23px;
+    }
+
+    .logo {
+        margin-top: 25px;
+        margin-left: -36px;
+    }
+
+    .burger-menu {
+        display: block;
+
+    }
+
+    .burger {
+        width: 50px;
+    }
+
+    .nav-position {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cards-wrapper-down {
+        margin: 0 80px 0 50px;
+    }
+}
