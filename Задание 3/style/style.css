@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+
+/* 1.контейнер всей web-страницы*/
+.container{
+    max-width: 1300px;
+    width: 100%;
+}
+/* 2.header*/
+/* Первая часть */
+.icon{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.icon-img{
+    padding-left: 10%;
+}
+.icon__text{
+    align-self: center;
+    color: darkgrey;
+}
+
+/*Вторая часть в header*/
+.logo-part__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: rgb(58, 58, 208);
+   
+}
+.logo-part__button {
+    padding: 10px 15px ;
+    color: #fff;
+
+    border-radius: 30px;
+    border-color: rgb(58, 58, 208);
+    border-bottom:rgb(58, 58, 208);
+    border-right: rgb(58, 58, 208);
+    font-size: 1rem;
+    transition: background 0.5s;
+     
+}
+.logo-part__button:hover{
+    background-color: #22066a;
+}
+
+/*Третья часть в header (заголовок, текст и картинка на фоне)*/
+.holder{
+    width: 100%;
+}
+.holder__wrapper{
+    margin: 0 53% 1% 4%;
+    position: relative;
+}
+.holder__background-img{
+    position: absolute;
+    top: 20%;
+    left: 62%;
+    z-index: 0; 
+}
+
+.holder__img{
+    width: 100%;
+    height: 450px;
+}
+
+.holder__title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 70px;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 32px;
+    color: rgb(108, 107, 107);
+}
+
+.holder__button{
+    padding: 15px 30px;
+    margin-top: 7%;
+    display: inline-block;
+    background-color: rgb(58, 58, 208);
+    color: #fff;
+
+    border-radius: 30px;
+    border-color: rgb(58, 58, 208);
+    border-bottom:rgb(58, 58, 208);
+    border-right: rgb(58, 58, 208);;
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    transition: background 0.5s;
+   
+}
+.holder__button:hover{
+    background-color: #22066a;
+}
+
+
+.main-nav{
+  font-size: 1rem;
+  width: 90%;
+}
+.main-nav__wrapper{
+   margin: 0 1.6%;
+   display: block;
+}
+
+nav>a{
+    display: inline-block;
+    text-decoration: none;
+    color: #5222D0;
+     margin: 3%;
+    margin-top: 5%;
+    transition: color 0.5s;
+}
+a:hover{
+    color: greenyellow;
+}
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 80%;
+    } 
+    .container{
+        max-width: 1024px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 60%;
+    } 
+    .container{
+        max-width: 767px;
+        width: 100%;
+    }
+     
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 40%;
+    } 
+
+    .container{
+        max-width: 320px;
+        width: 100%;
+    }  
+}
+
+
